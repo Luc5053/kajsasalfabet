@@ -11,7 +11,8 @@ import SwiftUI
 struct kajsasalfabetApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+           // ContentView()
+            collection()
         }
     }
 }

@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		849D72AB27342F2B007C05B0 /* kajsasalfabetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849D72AA27342F2B007C05B0 /* kajsasalfabetApp.swift */; };
 		849D72AD27342F2B007C05B0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849D72AC27342F2B007C05B0 /* ContentView.swift */; };
 		849D72AF27342F2D007C05B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849D72AE27342F2D007C05B0 /* Assets.xcassets */; };
 		849D72B227342F2D007C05B0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849D72B127342F2D007C05B0 /* Preview Assets.xcassets */; };
+		849D72BB27343A9D007C05B0 /* collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849D72BA27343A9D007C05B0 /* collection.swift */; };
+		849D72BD27344490007C05B0 /* kajsasalfabetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849D72BC27344490007C05B0 /* kajsasalfabetApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		849D72A727342F2B007C05B0 /* kajsasalfabet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kajsasalfabet.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		849D72AA27342F2B007C05B0 /* kajsasalfabetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kajsasalfabetApp.swift; sourceTree = "<group>"; };
 		849D72AC27342F2B007C05B0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		849D72AE27342F2D007C05B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		849D72B127342F2D007C05B0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		849D72BA27343A9D007C05B0 /* collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = collection.swift; sourceTree = "<group>"; };
+		849D72BC27344490007C05B0 /* kajsasalfabetApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kajsasalfabetApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +53,9 @@
 		849D72A927342F2B007C05B0 /* kajsasalfabet */ = {
 			isa = PBXGroup;
 			children = (
-				849D72AA27342F2B007C05B0 /* kajsasalfabetApp.swift */,
+				849D72BC27344490007C05B0 /* kajsasalfabetApp.swift */,
 				849D72AC27342F2B007C05B0 /* ContentView.swift */,
+				849D72BA27343A9D007C05B0 /* collection.swift */,
 				849D72AE27342F2D007C05B0 /* Assets.xcassets */,
 				849D72B027342F2D007C05B0 /* Preview Content */,
 			);
@@ -138,7 +141,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				849D72AD27342F2B007C05B0 /* ContentView.swift in Sources */,
-				849D72AB27342F2B007C05B0 /* kajsasalfabetApp.swift in Sources */,
+				849D72BD27344490007C05B0 /* kajsasalfabetApp.swift in Sources */,
+				849D72BB27343A9D007C05B0 /* collection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
