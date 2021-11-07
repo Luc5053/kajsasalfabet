@@ -17,25 +17,30 @@ struct collection: View {
     
     var body: some View {
         NavigationView {
-        ScrollView {
-            LazyVGrid(columns: layout, spacing: 2
-            ) {
-                ForEach(alphabet, id: \.self){ item in
-                    VStack {
-                        Text(item)
-                            .fontWeight(.bold)
-                            .padding(.all)
-                            .font(.title).frame(width: 90, height: 90)
-                            .foregroundColor(.white)
-                            .background(.green)
-                            .cornerRadius(/*@START_MENU_TOKEN@*/10.0/*@END_MENU_TOKEN@*/)
-                            
-                    }
+            ScrollView {
+                NavigationLink(destination: ContentView()) {
+                    LazyVGrid(columns: layout, spacing: 2
+                    ) {
+                        ForEach(alphabet, id: \.self){ currentalphabet in
+                            VStack {
+                                Text(currentalphabet)
+                                    .fontWeight(.bold)
+                                    .padding(.all)
+                                    .font(.title).frame(width: 90, height: 90)
+                                    .foregroundColor(.white)
+                                    .background(.green)
+                                    .cornerRadius(10.0)
+
+                            }
+                        }
                 }
+               
+                }
+                
+                .padding(.horizontal)
             }
-            .padding(.horizontal)
-        }
-        .navigationTitle("Kajsas Alfabet")
+            
+            .navigationTitle("Kajsas Alfabet")
         }
     }
 }
