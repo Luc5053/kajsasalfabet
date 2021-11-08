@@ -9,10 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var moreinfo = ""
+    @State var moreinfo = "hsf"
     
     var body: some View {
-       Text(moreinfo)
+        ZStack{
+              LinearGradient(gradient: Gradient(colors: [.black, .green, .gray, .black]), startPoint: .topLeading, endPoint: .bottomTrailing)
+                .edgesIgnoringSafeArea(.all)
+        Text(moreinfo)
+            .font(.largeTitle)
+            .fontWeight(.bold)
+            .frame(width: 200.0, height: 200.0).foregroundColor(.white)
+        }
     }
 }
 
