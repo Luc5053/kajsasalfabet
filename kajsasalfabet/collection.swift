@@ -13,17 +13,17 @@ struct collection: View {
     @State var hejdåbutton = false
     
     let layout = [
-        GridItem(.adaptive(minimum: 80))
+        GridItem(.adaptive(minimum: 110))
     ]
     var body: some View {
         
         NavigationView {
             ZStack{
-                  LinearGradient(gradient: Gradient(colors: [.black, .green, .gray, .black]), startPoint: .topLeading, endPoint: .bottomTrailing)
+                LinearGradient(gradient: Gradient(colors: [.black, .orange, .gray, .black]), startPoint: .topLeading, endPoint: .bottomTrailing)
                     .edgesIgnoringSafeArea(.all)
             VStack {
                 ScrollView {
-                        LazyVGrid(columns: layout, spacing: 2
+                        LazyVGrid(columns: layout, spacing: 4
                         ) {
                             ForEach(alphabet, id: \.self){ currentalphabet in
             
@@ -34,7 +34,7 @@ struct collection: View {
                                         .fontWeight(.bold)
                                         .padding(.all)
                                         .font(.title)
-                                        .frame(width: 115, height: 120)
+                                        .frame(width: 115, height: 115)
                                         .foregroundColor(.white)
                                         .background(Color.green)
                                         .cornerRadius(10.0)
@@ -48,7 +48,7 @@ struct collection: View {
                 }
                 .navigationTitle("Hej Kajsa")
                 
-                NavigationLink(destination: ContentView(moreinfo: "Hejdå Kajsa")) {
+                NavigationLink(destination: LottieView(animationName: "cyclomontdor", loopMode: .loop)) {
 
                     Text("Hejdå Kajsa!!")
                         .font(.title)

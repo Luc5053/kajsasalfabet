@@ -7,20 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84812367273BCDF9004C7BBB /* cyclomontdor.json in Resources */ = {isa = PBXBuildFile; fileRef = 84812366273BCDF9004C7BBB /* cyclomontdor.json */; };
 		849D72AD27342F2B007C05B0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849D72AC27342F2B007C05B0 /* ContentView.swift */; };
 		849D72AF27342F2D007C05B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849D72AE27342F2D007C05B0 /* Assets.xcassets */; };
 		849D72B227342F2D007C05B0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849D72B127342F2D007C05B0 /* Preview Assets.xcassets */; };
 		849D72BB27343A9D007C05B0 /* collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849D72BA27343A9D007C05B0 /* collection.swift */; };
 		849D72BD27344490007C05B0 /* kajsasalfabetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849D72BC27344490007C05B0 /* kajsasalfabetApp.swift */; };
+		84CA9E15273AD8B700B48CBA /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 84CA9E14273AD8B700B48CBA /* Lottie */; };
+		84CA9E17273ADC9D00B48CBA /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CA9E16273ADC9D00B48CBA /* LottieView.swift */; };
+		84CA9E1A273AE83200B48CBA /* 54941-cyclomontdor.json in Resources */ = {isa = PBXBuildFile; fileRef = 84CA9E19273AE83200B48CBA /* 54941-cyclomontdor.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84812366273BCDF9004C7BBB /* cyclomontdor.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cyclomontdor.json; sourceTree = "<group>"; };
 		849D72A727342F2B007C05B0 /* kajsasalfabet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kajsasalfabet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		849D72AC27342F2B007C05B0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		849D72AE27342F2D007C05B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		849D72B127342F2D007C05B0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		849D72BA27343A9D007C05B0 /* collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = collection.swift; sourceTree = "<group>"; };
 		849D72BC27344490007C05B0 /* kajsasalfabetApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kajsasalfabetApp.swift; sourceTree = "<group>"; };
+		84CA9E16273ADC9D00B48CBA /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		84CA9E19273AE83200B48CBA /* 54941-cyclomontdor.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "54941-cyclomontdor.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84CA9E15273AD8B700B48CBA /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,9 +61,11 @@
 		849D72A927342F2B007C05B0 /* kajsasalfabet */ = {
 			isa = PBXGroup;
 			children = (
+				84CA9E16273ADC9D00B48CBA /* LottieView.swift */,
 				849D72BC27344490007C05B0 /* kajsasalfabetApp.swift */,
 				849D72AC27342F2B007C05B0 /* ContentView.swift */,
 				849D72BA27343A9D007C05B0 /* collection.swift */,
+				84CA9E18273ADCD900B48CBA /* LottieAnimation */,
 				849D72AE27342F2D007C05B0 /* Assets.xcassets */,
 				849D72B027342F2D007C05B0 /* Preview Content */,
 			);
@@ -68,6 +78,15 @@
 				849D72B127342F2D007C05B0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		84CA9E18273ADCD900B48CBA /* LottieAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				84812366273BCDF9004C7BBB /* cyclomontdor.json */,
+				84CA9E19273AE83200B48CBA /* 54941-cyclomontdor.json */,
+			);
+			path = LottieAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +105,9 @@
 			dependencies = (
 			);
 			name = kajsasalfabet;
+			packageProductDependencies = (
+				84CA9E14273AD8B700B48CBA /* Lottie */,
+			);
 			productName = kajsasalfabet;
 			productReference = 849D72A727342F2B007C05B0 /* kajsasalfabet.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +136,9 @@
 				Base,
 			);
 			mainGroup = 849D729E27342F2B007C05B0;
+			packageReferences = (
+				84CA9E13273AD8B700B48CBA /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = 849D72A827342F2B007C05B0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -129,6 +154,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				849D72B227342F2D007C05B0 /* Preview Assets.xcassets in Resources */,
+				84CA9E1A273AE83200B48CBA /* 54941-cyclomontdor.json in Resources */,
+				84812367273BCDF9004C7BBB /* cyclomontdor.json in Resources */,
 				849D72AF27342F2D007C05B0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +170,7 @@
 				849D72AD27342F2B007C05B0 /* ContentView.swift in Sources */,
 				849D72BD27344490007C05B0 /* kajsasalfabetApp.swift in Sources */,
 				849D72BB27343A9D007C05B0 /* collection.swift in Sources */,
+				84CA9E17273ADC9D00B48CBA /* LottieView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +300,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_ASSET_PATHS = "\"kajsasalfabet/Preview Content\"";
 				DEVELOPMENT_TEAM = 78WKSG29HK;
 				ENABLE_PREVIEWS = YES;
@@ -281,7 +310,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,6 +331,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_ASSET_PATHS = "\"kajsasalfabet/Preview Content\"";
 				DEVELOPMENT_TEAM = 78WKSG29HK;
 				ENABLE_PREVIEWS = YES;
@@ -311,7 +341,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -347,6 +377,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		84CA9E13273AD8B700B48CBA /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		84CA9E14273AD8B700B48CBA /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84CA9E13273AD8B700B48CBA /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 849D729F27342F2B007C05B0 /* Project object */;
 }
