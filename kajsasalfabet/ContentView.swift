@@ -12,16 +12,32 @@ struct ContentView: View {
     @State var moreinfo = "hsf"
     
     var body: some View {
-        ZStack{
+       /* ZStack{
               LinearGradient(gradient: Gradient(colors: [.black, .green, .gray, .black]), startPoint: .topLeading, endPoint: .bottomTrailing)
                 .edgesIgnoringSafeArea(.all)
-        Text(moreinfo)
+        */
+        LottieView(animationName: moreinfo, loopMode: .loop)
+        
+            .onAppear(perform: {
+                                   playSound(sound: "Read", type: "wav")
+                                   audioPlayer?.numberOfLoops = 100
+                               })
+//        if moreinfo != "Ww" {
+//            
+//        } else {
+//            Image("Ww")
+//                .resizable()
+//                .scaledToFit()
+//                .frame(width: UIScreen.main
+//                        .bounds.width)
+//        }
+/*        Text(moreinfo)
             .font(.largeTitle)
             .fontWeight(.bold)
-            .frame(width: 200.0, height: 200.0).foregroundColor(.white)
+            .frame(width: 200.0, height: 200.0).foregroundColor(.white)*/
         }
     }
-}
+//}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
