@@ -19,6 +19,7 @@ struct collection: View {
     let columns = [
         GridItem(.flexible(), spacing: 2, alignment: nil),
         GridItem(.flexible(), spacing: 2, alignment: nil),
+        GridItem(.flexible(), spacing: 2, alignment: nil),
         GridItem(.flexible(), spacing: 2, alignment: nil)
     ]
     
@@ -36,7 +37,7 @@ struct collection: View {
                         
                             ForEach(alphabet, id: \.self){ currentalphabet in
                                 
-                                NavigationLink(destination: ContentView(moreinfo: (currentalphabet))) {
+                                NavigationLink(destination: ContentView(moreinfo1: (currentalphabet))) {
                                     
                                     Text(currentalphabet)
                                         .fontWeight(.bold)

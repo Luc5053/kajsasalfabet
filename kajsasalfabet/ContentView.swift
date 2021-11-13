@@ -9,19 +9,25 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var moreinfo = "hsf"
+    @State var moreinfo1 = "hsf"
+    @State var moreinfo2 = "Aa1"
     
     var body: some View {
+        let player = AudioPlayer()
+        let moreinfo2 = "hsf1"
        /* ZStack{
               LinearGradient(gradient: Gradient(colors: [.black, .green, .gray, .black]), startPoint: .topLeading, endPoint: .bottomTrailing)
                 .edgesIgnoringSafeArea(.all)
         */
-        LottieView(animationName: moreinfo, loopMode: .loop)
-        
+        LottieView(animationName: moreinfo1, loopMode: .loop)
             .onAppear(perform: {
-                                   playSound(sound: "Read", type: "wav")
-                                   audioPlayer?.numberOfLoops = 100
+                player.playSound(sound1: moreinfo1, sound2: moreinfo1 + "1", type: "wav")
+                player.audioPlayer?.numberOfLoops = 0
                                })
+        Spacer()
+        Text(moreinfo1)
+            .font(.title)
+            .fontWeight(.bold)
 //        if moreinfo != "Ww" {
 //            
 //        } else {
