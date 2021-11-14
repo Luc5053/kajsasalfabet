@@ -323,7 +323,6 @@
 		84CA9E18273ADCD900B48CBA /* LottieAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				84DF50F627407BAF006A3AC9 /* Ska vi spela.json */,
 				84A5520C273D26560018EFF8 /* Aa.json */,
 				849C7566273C1BAA00672FDD /* Bb.json */,
 				849C759C273C1D1400672FDD /* Cc.json */,
@@ -354,6 +353,7 @@
 				849C7594273C1C1900672FDD /* Xx.json */,
 				849C758E273C1C1900672FDD /* Yy.json */,
 				849C7593273C1C1900672FDD /* Zz.json */,
+				84DF50F627407BAF006A3AC9 /* Ska vi spela.json */,
 			);
 			path = LottieAnimation;
 			sourceTree = "<group>";

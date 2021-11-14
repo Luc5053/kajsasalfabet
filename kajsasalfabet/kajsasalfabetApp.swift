@@ -12,7 +12,8 @@ struct kajsasalfabetApp: App {
     var body: some Scene {
         WindowGroup {
            // ContentView()
-            collection()
+//            collection()
+            TextView()
         }
     }
 }

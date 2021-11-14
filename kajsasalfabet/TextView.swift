@@ -8,22 +8,38 @@
 import SwiftUI
 
 struct TextView: View {
+    
+    @State var onClick = false
+    
     var body: some View {
-        ZStack{
-            LinearGradient(gradient: Gradient(colors: [.black, .orange, .gray, .black]), startPoint: .topLeading, endPoint: .bottomTrailing)
-                .edgesIgnoringSafeArea(.all)
+//        ZStack{
+//            LinearGradient(gradient: Gradient(colors: [.black, .orange, .gray, .black]), startPoint: .topLeading, endPoint: .bottomTrailing)
+//          LottieView(animationName: "bye bye", loopMode: .loop))      .edgesIgnoringSafeArea(.all)
+        NavigationView {
             VStack {
+                Text("Hallå allihopa!")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .foregroundColor(.blue)
+                    .padding(.horizontal)
+                LottieView(animationName: "Ska vi spela", loopMode: .loop)
                 ScrollView {
-                    Text("Hallå allihopa, ")
-                        .font(.largeTitle)
-                        .foregroundColor(.white)
+
                     Spacer()
-                    Text("Mitt namn är Kajsa och jag är 4 år gammal. Jag skulle vilja ta med dig på alfabetstur, vilja jag gjorde med min mamma Eva."  )
+
+                    Text("Mitt namn är Kajsa och jag är 4 år gammal.")
                         .font(.title)
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
+                        .multilineTextAlignment(.leading)
+                        .padding(.horizontal)
+                    Text("Jag skulle vilja spela med dig på alfabet, som vi gjorde med min mamma Eva.")
+                        .font(.title)
+                        .foregroundColor(.black)
+                        .multilineTextAlignment(.leading)
+                        .padding(.horizontal)
                     
                     
-    //                Text("Aa " + " Anden i flaskan anade aldrig att alla anade allt.")
+//  Text("Aa " + " Anden i flaskan anade aldrig att alla anade allt.")
     //                    .padding(.horizontal)
     //                Text("Bb " + "Bananer i pyjamas badar bastu bums.")
     //                    .padding(.horizontal)
@@ -32,7 +48,7 @@ struct TextView: View {
     //                Text("Den dödande draken drar elden mot Disa.")
     //                Text("Eskil elefant syns inte när det elektriska ljuset elimineras.")
     //                Text("Flaggans färger fläktar fort.")
-                    Spacer()
+//                    Spacer()
     //                Text("Grisen Gustav grymtar efter Greta.")
     //                Text("Hunden Hasse hejar helknäppt.")
                     
@@ -58,24 +74,37 @@ struct TextView: View {
         //            Text("Äggen är äntligen ätbara.")
         //            Text("Ögon och öron ömhet önskar.")
                 }
-                NavigationLink(destination: LottieView(animationName: "Ska vi spela", loopMode: .loop)) {
-                    Text("Ska vi spela")
-                        .font(.title)
-                        .fontWeight(.bold)
-                        .foregroundColor(.white)
-                        .padding(.all)
+//                NavigationLink(destination: collection()) {
+                Button("Skulle vi spela!"){
+                    onClick = true
+                }
+                .padding(.all)
+                .font(.title)
+                    .fullScreenCover(isPresented: $onClick) {
+                        collection()
+//                    Text()
+//                        .font(.title)
+//                        .fontWeight(.bold)
+//                        .padding(.all)
                 }
                 
+//                    Text("Ska vi spela")
+//                        .font(.title)
+//                        .fontWeight(.bold)
+//                        .foregroundColor(.blue)
+//                        .padding(.all)
             }
-            .padding(.all)
-     
+            .padding(.horizontal)
+                
+            }
         }
-        
+     
     }
-}
+//}
 
 struct TextView_Previews: PreviewProvider {
     static var previews: some View {
         TextView()
     }
 }
+//}
