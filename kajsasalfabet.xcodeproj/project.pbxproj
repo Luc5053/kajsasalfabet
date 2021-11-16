@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		847305502742C6DE000AB5AF /* Ll1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8473054F2742C6DE000AB5AF /* Ll1.wav */; };
+		847305522742C6F1000AB5AF /* Ll.wav in Resources */ = {isa = PBXBuildFile; fileRef = 847305512742C6F1000AB5AF /* Ll.wav */; };
+		847305542742C704000AB5AF /* Ww1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 847305532742C704000AB5AF /* Ww1.wav */; };
+		847305562742C714000AB5AF /* Ww.wav in Resources */ = {isa = PBXBuildFile; fileRef = 847305552742C714000AB5AF /* Ww.wav */; };
+		847305582742E079000AB5AF /* PlayTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847305572742E079000AB5AF /* PlayTextView.swift */; };
+		8499213727419D940018C41E /* Oo.json in Resources */ = {isa = PBXBuildFile; fileRef = 8499213627419D940018C41E /* Oo.json */; };
 		849B7C292740510100EEF5F0 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849B7C282740510100EEF5F0 /* TextView.swift */; };
 		849C7567273C1BAA00672FDD /* Bb.json in Resources */ = {isa = PBXBuildFile; fileRef = 849C7566273C1BAA00672FDD /* Bb.json */; };
 		849C7569273C1BB700672FDD /* Dd.json in Resources */ = {isa = PBXBuildFile; fileRef = 849C7568273C1BB700672FDD /* Dd.json */; };
@@ -19,7 +25,6 @@
 		849C7579273C1BE400672FDD /* Jj.json in Resources */ = {isa = PBXBuildFile; fileRef = 849C7574273C1BE300672FDD /* Jj.json */; };
 		849C7580273C1BF600672FDD /* Mm.json in Resources */ = {isa = PBXBuildFile; fileRef = 849C757B273C1BF600672FDD /* Mm.json */; };
 		849C7581273C1BF600672FDD /* Qq.json in Resources */ = {isa = PBXBuildFile; fileRef = 849C757C273C1BF600672FDD /* Qq.json */; };
-		849C7582273C1BF600672FDD /* Oo.json in Resources */ = {isa = PBXBuildFile; fileRef = 849C757D273C1BF600672FDD /* Oo.json */; };
 		849C7583273C1BF600672FDD /* Nn.json in Resources */ = {isa = PBXBuildFile; fileRef = 849C757E273C1BF600672FDD /* Nn.json */; };
 		849C7589273C1C0700672FDD /* Tt.json in Resources */ = {isa = PBXBuildFile; fileRef = 849C7584273C1C0700672FDD /* Tt.json */; };
 		849C758A273C1C0700672FDD /* Vv.json in Resources */ = {isa = PBXBuildFile; fileRef = 849C7585273C1C0700672FDD /* Vv.json */; };
@@ -65,7 +70,6 @@
 		849D9D36273DD8DA003B10AE /* Jj.wav in Resources */ = {isa = PBXBuildFile; fileRef = 849D9D2F273DD8DA003B10AE /* Jj.wav */; };
 		849D9D37273DD8DA003B10AE /* Jj1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 849D9D30273DD8DA003B10AE /* Jj1.wav */; };
 		849D9D38273DD8DA003B10AE /* Kk.wav in Resources */ = {isa = PBXBuildFile; fileRef = 849D9D31273DD8DA003B10AE /* Kk.wav */; };
-		849D9D39273DD8DA003B10AE /* Ll.wav in Resources */ = {isa = PBXBuildFile; fileRef = 849D9D32273DD8DA003B10AE /* Ll.wav */; };
 		849D9D3A273DD8DA003B10AE /* Ii.wav in Resources */ = {isa = PBXBuildFile; fileRef = 849D9D33273DD8DA003B10AE /* Ii.wav */; };
 		849D9D43273DD951003B10AE /* Pp1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 849D9D3B273DD950003B10AE /* Pp1.wav */; };
 		849D9D44273DD951003B10AE /* Nn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 849D9D3C273DD950003B10AE /* Nn.wav */; };
@@ -85,7 +89,6 @@
 		849D9D5A273DD97E003B10AE /* Tt1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 849D9D52273DD97E003B10AE /* Tt1.wav */; };
 		849D9D62273DD994003B10AE /* Vv.wav in Resources */ = {isa = PBXBuildFile; fileRef = 849D9D5B273DD993003B10AE /* Vv.wav */; };
 		849D9D63273DD994003B10AE /* Uu1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 849D9D5C273DD993003B10AE /* Uu1.wav */; };
-		849D9D64273DD994003B10AE /* Ww.wav in Resources */ = {isa = PBXBuildFile; fileRef = 849D9D5D273DD994003B10AE /* Ww.wav */; };
 		849D9D65273DD994003B10AE /* Xx.wav in Resources */ = {isa = PBXBuildFile; fileRef = 849D9D5E273DD994003B10AE /* Xx.wav */; };
 		849D9D66273DD994003B10AE /* Uu.wav in Resources */ = {isa = PBXBuildFile; fileRef = 849D9D5F273DD994003B10AE /* Uu.wav */; };
 		849D9D67273DD994003B10AE /* Xx1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 849D9D60273DD994003B10AE /* Xx1.wav */; };
@@ -106,6 +109,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8473054F2742C6DE000AB5AF /* Ll1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Ll1.wav; sourceTree = "<group>"; };
+		847305512742C6F1000AB5AF /* Ll.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Ll.wav; sourceTree = "<group>"; };
+		847305532742C704000AB5AF /* Ww1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Ww1.wav; sourceTree = "<group>"; };
+		847305552742C714000AB5AF /* Ww.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Ww.wav; sourceTree = "<group>"; };
+		847305572742E079000AB5AF /* PlayTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayTextView.swift; sourceTree = "<group>"; };
+		8499213627419D940018C41E /* Oo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Oo.json; sourceTree = "<group>"; };
 		849B7C282740510100EEF5F0 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		849C7566273C1BAA00672FDD /* Bb.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Bb.json; sourceTree = "<group>"; };
 		849C7568273C1BB700672FDD /* Dd.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Dd.json; sourceTree = "<group>"; };
@@ -118,7 +127,6 @@
 		849C7574273C1BE300672FDD /* Jj.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Jj.json; sourceTree = "<group>"; };
 		849C757B273C1BF600672FDD /* Mm.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Mm.json; sourceTree = "<group>"; };
 		849C757C273C1BF600672FDD /* Qq.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Qq.json; sourceTree = "<group>"; };
-		849C757D273C1BF600672FDD /* Oo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Oo.json; sourceTree = "<group>"; };
 		849C757E273C1BF600672FDD /* Nn.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Nn.json; sourceTree = "<group>"; };
 		849C7584273C1C0700672FDD /* Tt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Tt.json; sourceTree = "<group>"; };
 		849C7585273C1C0700672FDD /* Vv.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Vv.json; sourceTree = "<group>"; };
@@ -165,7 +173,6 @@
 		849D9D2F273DD8DA003B10AE /* Jj.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Jj.wav; sourceTree = "<group>"; };
 		849D9D30273DD8DA003B10AE /* Jj1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Jj1.wav; sourceTree = "<group>"; };
 		849D9D31273DD8DA003B10AE /* Kk.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Kk.wav; sourceTree = "<group>"; };
-		849D9D32273DD8DA003B10AE /* Ll.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Ll.wav; sourceTree = "<group>"; };
 		849D9D33273DD8DA003B10AE /* Ii.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Ii.wav; sourceTree = "<group>"; };
 		849D9D3B273DD950003B10AE /* Pp1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Pp1.wav; sourceTree = "<group>"; };
 		849D9D3C273DD950003B10AE /* Nn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Nn.wav; sourceTree = "<group>"; };
@@ -185,7 +192,6 @@
 		849D9D52273DD97E003B10AE /* Tt1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Tt1.wav; sourceTree = "<group>"; };
 		849D9D5B273DD993003B10AE /* Vv.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Vv.wav; sourceTree = "<group>"; };
 		849D9D5C273DD993003B10AE /* Uu1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Uu1.wav; sourceTree = "<group>"; };
-		849D9D5D273DD994003B10AE /* Ww.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Ww.wav; sourceTree = "<group>"; };
 		849D9D5E273DD994003B10AE /* Xx.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Xx.wav; sourceTree = "<group>"; };
 		849D9D5F273DD994003B10AE /* Uu.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Uu.wav; sourceTree = "<group>"; };
 		849D9D60273DD994003B10AE /* Xx1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Xx1.wav; sourceTree = "<group>"; };
@@ -240,6 +246,7 @@
 				849D72AC27342F2B007C05B0 /* ContentView.swift */,
 				849B7C282740510100EEF5F0 /* TextView.swift */,
 				849D72BA27343A9D007C05B0 /* collection.swift */,
+				847305572742E079000AB5AF /* PlayTextView.swift */,
 				849D9D0B273DD154003B10AE /* AudioView.swift */,
 				849D9D79273DE5CD003B10AE /* Read */,
 				84CA9E18273ADCD900B48CBA /* LottieAnimation */,
@@ -282,7 +289,8 @@
 				849D9D30273DD8DA003B10AE /* Jj1.wav */,
 				849D9D31273DD8DA003B10AE /* Kk.wav */,
 				849D9D2D273DD8DA003B10AE /* Kk1.wav */,
-				849D9D32273DD8DA003B10AE /* Ll.wav */,
+				847305512742C6F1000AB5AF /* Ll.wav */,
+				8473054F2742C6DE000AB5AF /* Ll1.wav */,
 				849D9D40273DD950003B10AE /* Mm.wav */,
 				849D9D41273DD950003B10AE /* Mm1.wav */,
 				849D9D3C273DD950003B10AE /* Nn.wav */,
@@ -303,7 +311,8 @@
 				849D9D5C273DD993003B10AE /* Uu1.wav */,
 				849D9D5B273DD993003B10AE /* Vv.wav */,
 				849D9D61273DD994003B10AE /* Vv1.wav */,
-				849D9D5D273DD994003B10AE /* Ww.wav */,
+				847305552742C714000AB5AF /* Ww.wav */,
+				847305532742C704000AB5AF /* Ww1.wav */,
 				849D9D5E273DD994003B10AE /* Xx.wav */,
 				849D9D60273DD994003B10AE /* Xx1.wav */,
 				849D9D6E273DD9C7003B10AE /* Yy.wav */,
@@ -337,7 +346,7 @@
 				849C7570273C1BE300672FDD /* Ll.json */,
 				849C757B273C1BF600672FDD /* Mm.json */,
 				849C757E273C1BF600672FDD /* Nn.json */,
-				849C757D273C1BF600672FDD /* Oo.json */,
+				8499213627419D940018C41E /* Oo.json */,
 				849C757C273C1BF600672FDD /* Qq.json */,
 				849C7587273C1C0700672FDD /* Rr.json */,
 				849C7588273C1C0700672FDD /* Ss.json */,
@@ -422,15 +431,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847305562742C714000AB5AF /* Ww.wav in Resources */,
+				847305502742C6DE000AB5AF /* Ll1.wav in Resources */,
 				849D9D68273DD994003B10AE /* Vv1.wav in Resources */,
 				849D9D66273DD994003B10AE /* Uu.wav in Resources */,
 				849D9D59273DD97E003B10AE /* Ss.wav in Resources */,
+				8499213727419D940018C41E /* Oo.json in Resources */,
 				849D9D54273DD97E003B10AE /* Qq1.wav in Resources */,
 				849D9D4A273DD951003B10AE /* Oo.wav in Resources */,
 				849D9D65273DD994003B10AE /* Xx.wav in Resources */,
 				849D9D38273DD8DA003B10AE /* Kk.wav in Resources */,
 				849D9D37273DD8DA003B10AE /* Jj1.wav in Resources */,
-				849D9D39273DD8DA003B10AE /* Ll.wav in Resources */,
 				849C7575273C1BE400672FDD /* Ll.json in Resources */,
 				849C756B273C1BC000672FDD /* Ee.json in Resources */,
 				849D9D29273DD8C1003B10AE /* Gg.wav in Resources */,
@@ -442,7 +453,7 @@
 				849D9D1B273DD8A0003B10AE /* Bb.wav in Resources */,
 				849C758C273C1C0700672FDD /* Rr.json in Resources */,
 				849D9D76273DD9C7003B10AE /* Yy.wav in Resources */,
-				849C7582273C1BF600672FDD /* Oo.json in Resources */,
+				847305542742C704000AB5AF /* Ww1.wav in Resources */,
 				849D9D58273DD97E003B10AE /* Rr1.wav in Resources */,
 				849C7581273C1BF600672FDD /* Qq.json in Resources */,
 				849C75A1273C1F1A00672FDD /* Gg.json in Resources */,
@@ -482,6 +493,7 @@
 				849C7579273C1BE400672FDD /* Jj.json in Resources */,
 				849D72B227342F2D007C05B0 /* Preview Assets.xcassets in Resources */,
 				849D9D63273DD994003B10AE /* Uu1.wav in Resources */,
+				847305522742C6F1000AB5AF /* Ll.wav in Resources */,
 				849C7567273C1BAA00672FDD /* Bb.json in Resources */,
 				849D9D45273DD951003B10AE /* Oo1.wav in Resources */,
 				849D9D19273DD8A0003B10AE /* Aa1.wav in Resources */,
@@ -501,7 +513,6 @@
 				849D9D48273DD951003B10AE /* Mm.wav in Resources */,
 				849C7595273C1C1900672FDD /* Yy.json in Resources */,
 				849C7578273C1BE400672FDD /* Kk.json in Resources */,
-				849D9D64273DD994003B10AE /* Ww.wav in Resources */,
 				849D9D1A273DD8A0003B10AE /* Cc1.wav in Resources */,
 				849D9D75273DD9C7003B10AE /* Yy1.wav in Resources */,
 				849D9D62273DD994003B10AE /* Vv.wav in Resources */,
@@ -521,6 +532,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847305582742E079000AB5AF /* PlayTextView.swift in Sources */,
 				849D72AD27342F2B007C05B0 /* ContentView.swift in Sources */,
 				849D9D0C273DD154003B10AE /* AudioView.swift in Sources */,
 				849D72BD27344490007C05B0 /* kajsasalfabetApp.swift in Sources */,

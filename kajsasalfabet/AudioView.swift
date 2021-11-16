@@ -17,9 +17,9 @@ class AudioPlayer: UIViewController,AVAudioPlayerDelegate {
     var audioPlayer : AVAudioPlayer?
     var onFinished: (() -> ())? = nil
 
-
     func playSound(sound1: String, sound2: String, type : String) {
         self.playSound(sound: sound1, type: type){
+            
             self.playSound(sound: sound2, type: type)
             print("playing sound 2")
         }
@@ -31,7 +31,7 @@ class AudioPlayer: UIViewController,AVAudioPlayerDelegate {
                 self.onFinished = onFinished 
                 audioPlayer = try AVAudioPlayer (contentsOf: URL(fileURLWithPath: path))
                 audioPlayer?.delegate = self
-                audioPlayer?.numberOfLoops = 1
+                audioPlayer?.numberOfLoops = 0
                 audioPlayer?.play()
                 print("Sound Played")
             } catch {
@@ -43,6 +43,7 @@ class AudioPlayer: UIViewController,AVAudioPlayerDelegate {
     }
 
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        print("audioPlayerDidFinishPlaying")
         if (self.onFinished != nil) {
             self.onFinished!()
             self.onFinished = nil
