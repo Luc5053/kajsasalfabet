@@ -145,7 +145,7 @@ class AllTexts {
         thetexts.append("Xylofonen är extra roligt att spela på.")
         thetexts.append("Yxan hugger i veden.")
         thetexts.append("Zebran trivs bäst på zoo.")
-        thetexts.append("I ån stor vattnet aldrig stilla.")
+        thetexts.append("I ån står vattnet aldrig stilla.")
         thetexts.append("Äggen är äntligen ätbara.")
         thetexts.append("Ögon och öron ömhet önskar.")
 

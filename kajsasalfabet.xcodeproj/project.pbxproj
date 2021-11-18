@@ -141,7 +141,7 @@
 		849C759C273C1D1400672FDD /* Cc.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Cc.json; sourceTree = "<group>"; };
 		849C75A0273C1F1A00672FDD /* Gg.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Gg.json; sourceTree = "<group>"; };
 		849C75A2273C1F4900672FDD /* Pp.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Pp.json; sourceTree = "<group>"; };
-		849D72A727342F2B007C05B0 /* kajsasalfabet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kajsasalfabet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		849D72A727342F2B007C05B0 /* KajsasABC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KajsasABC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		849D72AC27342F2B007C05B0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		849D72AE27342F2D007C05B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		849D72B127342F2D007C05B0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -231,7 +231,7 @@
 		849D72A827342F2B007C05B0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				849D72A727342F2B007C05B0 /* kajsasalfabet.app */,
+				849D72A727342F2B007C05B0 /* KajsasABC.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -384,7 +384,7 @@
 				84CA9E14273AD8B700B48CBA /* Lottie */,
 			);
 			productName = kajsasalfabet;
-			productReference = 849D72A727342F2B007C05B0 /* kajsasalfabet.app */;
+			productReference = 849D72A727342F2B007C05B0 /* KajsasABC.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -682,7 +682,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = se.luckabamba.kajsasalfabet;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = KajsasABC;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -714,7 +714,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = se.luckabamba.kajsasalfabet;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = KajsasABC;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
