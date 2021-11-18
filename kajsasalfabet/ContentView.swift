@@ -10,8 +10,9 @@ import SwiftUI
 struct ContentView: View {
     
     @State var moreinfo1 = "hsf"
-    @State var moreinfo2 = "Aa1"
-    @State var moreinfo3 = "Aa2"
+    @State var moreinfo2 = ""
+   
+    
     
     var body: some View {
         let player = AudioPlayer()
@@ -22,15 +23,17 @@ struct ContentView: View {
                     player.playSound(sound1: moreinfo1, sound2: moreinfo1 + "1", type: "wav")
                     //player.audioPlayer?.numberOfLoops = 0
             })
+            
             Spacer()
             Text(moreinfo1)
                 .font(.title)
                 .fontWeight(.regular)
-                .padding(.all)
-            Text(moreinfo1)
-                .font(.title)
+                .padding(.horizontal)
+            Text(moreinfo2)
+                .font(.title2)
                 .fontWeight(.light)
-                .padding(.all)
+                .multilineTextAlignment(.center)
+                .padding([.leading, .bottom, .trailing])
         }
         
         

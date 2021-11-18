@@ -13,17 +13,17 @@ struct TextView: View {
     
     var body: some View {
         VStack {
-            Text("Hallå allihopa!")
+            Text("Hallå allihop!")
                 .font(.largeTitle)
                 .fontWeight(.bold)
                 .foregroundColor(.orange)
-                .padding(.horizontal)
+                .padding(.all)
             LottieView(animationName: "Ska vi spela", loopMode: .loop)
             ScrollView {
                 
                 Spacer()
                 
-                Text("Jag heter Kajsa och jag är 4 år gammal. Vill du leka alfabet med mig, som jag gjorde med min mamma Eva?")
+                Text("Jag heter Kajsa och jag är 8 år gammal. Jag tycker om att läsa och skriva. Vill du träna alfabetet med mig, som jag gjorde med min mamma Eva?")
                     .font(.title2)
                     .fontWeight(.light)
                     .foregroundColor(.orange)
@@ -32,7 +32,7 @@ struct TextView: View {
                 
             }
             
-            Button("Ska vi leka!"){
+            Button("Starta"){
                 onClick = true
             }
             .padding(.all)

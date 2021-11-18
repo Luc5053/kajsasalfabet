@@ -34,7 +34,7 @@ struct collection: View {
         
         NavigationView {
             ZStack{
-                LinearGradient(gradient: Gradient(colors: [.black, .blue, .purple, .black]), startPoint: .topLeading, endPoint: .bottomTrailing)
+                LinearGradient(gradient: Gradient(colors: [.green, .blue, .blue, .black]), startPoint: .top, endPoint: .bottom)
                     .edgesIgnoringSafeArea(.all)
                 VStack {
                     ScrollView {
@@ -42,11 +42,11 @@ struct collection: View {
                                   pinnedViews: [],
                                   content: {
                             
-                            ForEach(alphabet, id: \.self){ currentalphabet in
+                            ForEach(0..<alphabet.count){ currentalphabet in
                                 
-                                NavigationLink(destination: ContentView(moreinfo1: (currentalphabet))) {
+                                NavigationLink(destination: ContentView(moreinfo1: (alphabet[currentalphabet]), moreinfo2: AllTexts().thetexts[currentalphabet])) {
                                     
-                                    Text(currentalphabet)
+                                    Text(alphabet[currentalphabet])
                                         .fontWeight(.bold)
                                         .font(.title)
                                         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
@@ -65,7 +65,7 @@ struct collection: View {
                             .padding(.horizontal, 5)
                     }
                     .frame(maxHeight: .infinity)
-                    .navigationTitle("Hej Kajsa")
+                    .navigationTitle("Alfabetet")
                     
                     /*
                     NavigationLink(destination: LottieView(animationName: "bye bye", loopMode: .loop)) {
@@ -86,7 +86,7 @@ struct collection: View {
                         }
                         
                     }) {
-                        Text("Hejdå Kajsa!!")
+                        Text("Hejdå!!")
                             .font(.title)
                             .fontWeight(.bold)
                             .foregroundColor(Color.orange)
@@ -120,7 +120,6 @@ class AllTexts {
     init() {
         
         thetexts.append("Anden i flaskan anade aldrig att alla anade allt.")
-        thetexts.append("Bananer i pyjamas badar bastu bums.")
         thetexts.append("Bananer i pyjamas badar bastu bums.")
         thetexts.append("Cecilias cykel cirklar runt på cirkusen.")
         thetexts.append("Den dödande draken drar elden mot Disa.")
