@@ -28,12 +28,10 @@ struct ContentView: View {
             Text(moreinfo1)
                 .font(.largeTitle)
                 .fontWeight(.bold)
-                .foregroundColor(Color("newColor"))
                 .padding(.horizontal)
             Text(moreinfo2)
                 .font(.title)
                 .fontWeight(.light)
-                .foregroundColor(Color("newColor"))
                 .multilineTextAlignment(.center)
                 .padding(.all)
         }
