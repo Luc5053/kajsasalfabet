@@ -14,6 +14,7 @@ struct kajsasalfabetApp: App {
            // ContentView()
 //            collection()
             TextView()
+//            HapticView()
         }
     }
 }

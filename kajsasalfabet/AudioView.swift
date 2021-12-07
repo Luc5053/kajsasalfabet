@@ -57,14 +57,8 @@ class AudioPlayer: UIViewController,AVAudioPlayerDelegate {
                 audioPlayer?.stop()
                 print("Sound Stoped")
             } catch {
-                
                 print("Not able to Stop ")
             }
-            
-            
         }
-            
-        
     }
-
 }

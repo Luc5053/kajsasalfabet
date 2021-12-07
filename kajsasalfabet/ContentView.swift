@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     @State var moreinfo1 = "hsf"
-    @State var moreinfo2 = ""
+    @State var moreinfo2 = "hsf"
    
     
     
@@ -26,19 +26,19 @@ struct ContentView: View {
             
             Spacer()
             Text(moreinfo1)
-                .font(.title)
-                .fontWeight(.regular)
+                .font(.largeTitle)
+                .fontWeight(.bold)
+                .foregroundColor(Color("newColor"))
                 .padding(.horizontal)
             Text(moreinfo2)
-                .font(.title2)
+                .font(.title)
                 .fontWeight(.light)
+                .foregroundColor(Color("newColor"))
                 .multilineTextAlignment(.center)
-                .padding([.leading, .bottom, .trailing])
-        }
-        
-        
+                .padding(.all)
         }
     }
+}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

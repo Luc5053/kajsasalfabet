@@ -4,7 +4,7 @@
 //
 //  Created by Luc Kabamba on 2021-11-04.
 //
-
+import CoreHaptics
 import SwiftUI
 
 struct collection: View {
@@ -18,6 +18,8 @@ struct collection: View {
     var texts = [String]()
     
     @State var hejdåbutton = false
+    
+    @State private var engine: CHHapticEngine?
     
     let layout = [
         GridItem(.adaptive(minimum: 80))
@@ -34,8 +36,8 @@ struct collection: View {
         
         NavigationView {
             ZStack{
-                LinearGradient(gradient: Gradient(colors: [.green, .blue, .blue, .black]), startPoint: .top, endPoint: .bottom)
-                    .edgesIgnoringSafeArea(.all)
+//                LinearGradient(gradient: Gradient(colors: [.blue, .blue, .blue, .blue]), startPoint: .top, endPoint: .bottom)
+//                    .edgesIgnoringSafeArea(.all)
                 VStack {
                     ScrollView {
                         LazyVGrid(columns: columns, alignment: .center, spacing: 2,
@@ -57,27 +59,16 @@ struct collection: View {
                                         .cornerRadius(10.0)
                                     
                                 }
-                                
                             }
-                            
-                        }
-                        )
+
+                            })
+                        
                             .padding(.horizontal, 5)
                     }
                     .frame(maxHeight: .infinity)
                     .navigationTitle("Alfabetet")
+//                    .navigationBarTitle(Text("Alfabetet")).navigationBarHidden(false).foregroundColor(Color("newColor"))
                     
-                    /*
-                    NavigationLink(destination: LottieView(animationName: "bye bye", loopMode: .loop)) {
-                        
-                        Text("Hejdå Kajsa!!")
-                            .font(.title)
-                            .fontWeight(.bold)
-                            .foregroundColor(Color.orange)
-                
-                        
-                    }
-                    */
                     Button(action: {
                         hejdåbutton = true
                         
@@ -92,6 +83,7 @@ struct collection: View {
                             .foregroundColor(Color.orange)
                     }
                 } // VSTACK
+                .background(Color("newColor"))
                 
                 if(hejdåbutton)
                 {
@@ -99,10 +91,39 @@ struct collection: View {
             }
                 
           } // ZSTACK
-            .background(Color.red)
+//            .background(Color.red)
        }
     }
-    
+    func complexSuccess() {
+        // make sure that the device supports haptics
+        guard CHHapticEngine.capabilitiesForHardware().supportsHaptics else { return }
+        var events = [CHHapticEvent]()
+        
+        for i in stride(from: 0, to: 1, by: 0.1) {
+            let intensity = CHHapticEventParameter(parameterID: .hapticIntensity, value: Float(i))
+            let sharpness = CHHapticEventParameter(parameterID: .hapticSharpness, value: Float(i))
+            let event = CHHapticEvent(eventType: .hapticTransient, parameters: [intensity, sharpness], relativeTime: i)
+            events.append(event)
+        }
+
+        for i in stride(from: 0, to: 1, by: 0.1) {
+            let intensity = CHHapticEventParameter(parameterID: .hapticIntensity, value: Float(1 - i))
+            let sharpness = CHHapticEventParameter(parameterID: .hapticSharpness, value: Float(1 - i))
+            let event = CHHapticEvent(eventType: .hapticTransient, parameters: [intensity, sharpness], relativeTime: 1 + i)
+            events.append(event)
+        }
+
+        // convert those events into a pattern and play it immediately
+        do {
+            let pattern = try CHHapticPattern(events: events, parameters: [])
+            let player = try engine?.makePlayer(with: pattern)
+            try player?.start(atTime: 0)
+        } catch {
+            print("Failed to play pattern: \(error.localizedDescription).")
+        }
+    }
+    }
+
     
     struct collection_Previews: PreviewProvider {
         static var previews: some View {
@@ -110,7 +131,7 @@ struct collection: View {
                 .previewInterfaceOrientation(.portrait)
         }
     }
-}
+
 
 
 class AllTexts {
@@ -128,9 +149,9 @@ class AllTexts {
         thetexts.append("Grisen Gustav grymtar efter Greta.")
         thetexts.append("Hunden Hasse hejar helknäppt.")
         thetexts.append("Igelkotten Isadora idrottar idogt.")
-        thetexts.append("Jovisst, jordgubbar finns i juni och juli.")
-        thetexts.append("Kungens krona är kobolt blå.")
-        thetexts.append("Lejonet Leonard leker i lingonskogen.")
+        thetexts.append("Jovisst,   jordgubbar finns i juni och juli.")
+        thetexts.append("Kungens krona är koboltblå.")
+        thetexts.append("Lejonet Leonard ler i lingonskogen.")
         thetexts.append("Månens magi manar många myter.")
         thetexts.append("Nisses näsa når nästan ner till naveln.")
         thetexts.append("I osten finns det fina o.")
@@ -140,7 +161,7 @@ class AllTexts {
         thetexts.append("Snorre säl surfar så snällt.")
         thetexts.append("Tuppen Tullitu tittar på TV.")
         thetexts.append("Ubåten U2 under vattnet undersöker.")
-        thetexts.append("Vart leder vägen.")
+        thetexts.append("Vart leder vägen?")
         thetexts.append("Förr i tiden använde man walkie-talkie nu är det bara webben som gäller.")
         thetexts.append("Xylofonen är extra roligt att spela på.")
         thetexts.append("Yxan hugger i veden.")
@@ -151,4 +172,11 @@ class AllTexts {
 
     }
 }
-
+extension View {
+    func hapticFeedback(style: UIImpactFeedbackGenerator.FeedbackStyle = .light) -> some View{ self.onTapGesture {
+        let impactHeavy = UIImpactFeedbackGenerator(style: .heavy)
+        impactHeavy.impactOccurred()
+        
+        }
+    }
+}
