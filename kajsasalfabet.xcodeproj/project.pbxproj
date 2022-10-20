@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -248,9 +248,9 @@
 				849D72BA27343A9D007C05B0 /* collection.swift */,
 				849D9D0B273DD154003B10AE /* AudioView.swift */,
 				84D88C49274FC88400C5EFA4 /* HapticView.swift */,
+				849D72AE27342F2D007C05B0 /* Assets.xcassets */,
 				849D9D79273DE5CD003B10AE /* Read */,
 				84CA9E18273ADCD900B48CBA /* LottieAnimation */,
-				849D72AE27342F2D007C05B0 /* Assets.xcassets */,
 				849D72B027342F2D007C05B0 /* Preview Content */,
 			);
 			path = kajsasalfabet;
@@ -398,7 +398,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1310;
-				LastUpgradeCheck = 1310;
+				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					849D72A627342F2B007C05B0 = {
 						CreatedOnToolsVersion = 13.1;
@@ -406,7 +406,7 @@
 				};
 			};
 			buildConfigurationList = 849D72A227342F2B007C05B0 /* Build configuration list for PBXProject "kajsasalfabet" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -668,7 +668,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 202112090937;
-				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_ASSET_PATHS = "\"kajsasalfabet/Preview Content\"";
 				DEVELOPMENT_TEAM = 78WKSG29HK;
 				ENABLE_PREVIEWS = YES;
@@ -679,7 +678,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -700,7 +699,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 202112090937;
-				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_ASSET_PATHS = "\"kajsasalfabet/Preview Content\"";
 				DEVELOPMENT_TEAM = 78WKSG29HK;
 				ENABLE_PREVIEWS = YES;
@@ -711,7 +709,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

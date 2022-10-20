@@ -27,7 +27,7 @@ struct TextView: View {
                     Spacer()
                     
                     Text("Jag heter Kajsa och jag är 8 år gammal. Jag tycker om att läsa och skriva. Vill du träna alfabetet med mig, som jag gjorde med min mamma Eva?")
-                        .font(.title)
+                        .font(.title3)
                         .fontWeight(.light)
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)

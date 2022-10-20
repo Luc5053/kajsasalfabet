@@ -19,8 +19,6 @@ struct collection: View {
     
     @State var hejdåbutton = false
     
-    @State private var engine: CHHapticEngine?
-    
     let layout = [
         GridItem(.adaptive(minimum: 80))
     ]
