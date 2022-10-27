@@ -22,7 +22,6 @@ struct ContentView: View {
             LottieView(animationName: moreinfo1, loopMode: .loop)
                 .onAppear(perform: {
                     player.playSound(sound1: moreinfo1, sound2: moreinfo1 + "1", type: "wav")
-                    //player.audioPlayer?.numberOfLoops = 0
             })
             
             Spacer()

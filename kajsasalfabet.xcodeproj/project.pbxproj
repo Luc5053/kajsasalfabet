@@ -106,6 +106,7 @@
 		84CA9E17273ADC9D00B48CBA /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CA9E16273ADC9D00B48CBA /* LottieView.swift */; };
 		84D88C4A274FC88400C5EFA4 /* HapticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D88C49274FC88400C5EFA4 /* HapticView.swift */; };
 		84DF50F727407BAF006A3AC9 /* Ska vi spela.json in Resources */ = {isa = PBXBuildFile; fileRef = 84DF50F627407BAF006A3AC9 /* Ska vi spela.json */; };
+		E7CF0E5A290ACF6C0007597F /* AllTextModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF0E59290ACF6C0007597F /* AllTextModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -208,6 +209,7 @@
 		84CA9E16273ADC9D00B48CBA /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		84D88C49274FC88400C5EFA4 /* HapticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticView.swift; sourceTree = "<group>"; };
 		84DF50F627407BAF006A3AC9 /* Ska vi spela.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Ska vi spela.json"; sourceTree = "<group>"; };
+		E7CF0E59290ACF6C0007597F /* AllTextModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTextModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,13 +243,10 @@
 		849D72A927342F2B007C05B0 /* kajsasalfabet */ = {
 			isa = PBXGroup;
 			children = (
-				84CA9E16273ADC9D00B48CBA /* LottieView.swift */,
 				849D72BC27344490007C05B0 /* kajsasalfabetApp.swift */,
-				849D72AC27342F2B007C05B0 /* ContentView.swift */,
-				849B7C282740510100EEF5F0 /* TextView.swift */,
-				849D72BA27343A9D007C05B0 /* collection.swift */,
-				849D9D0B273DD154003B10AE /* AudioView.swift */,
-				84D88C49274FC88400C5EFA4 /* HapticView.swift */,
+				E7CF0E58290ACDED0007597F /* Model */,
+				E7CF0E56290ACDD40007597F /* View */,
+				E7CF0E57290ACDE10007597F /* Controller */,
 				849D72AE27342F2D007C05B0 /* Assets.xcassets */,
 				849D9D79273DE5CD003B10AE /* Read */,
 				84CA9E18273ADCD900B48CBA /* LottieAnimation */,
@@ -365,6 +364,34 @@
 				84DF50F627407BAF006A3AC9 /* Ska vi spela.json */,
 			);
 			path = LottieAnimation;
+			sourceTree = "<group>";
+		};
+		E7CF0E56290ACDD40007597F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84D88C49274FC88400C5EFA4 /* HapticView.swift */,
+				84CA9E16273ADC9D00B48CBA /* LottieView.swift */,
+				849D9D0B273DD154003B10AE /* AudioView.swift */,
+				849D72AC27342F2B007C05B0 /* ContentView.swift */,
+				849B7C282740510100EEF5F0 /* TextView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E7CF0E57290ACDE10007597F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				849D72BA27343A9D007C05B0 /* collection.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E7CF0E58290ACDED0007597F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E7CF0E59290ACF6C0007597F /* AllTextModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -536,6 +563,7 @@
 				849D72AD27342F2B007C05B0 /* ContentView.swift in Sources */,
 				849D9D0C273DD154003B10AE /* AudioView.swift in Sources */,
 				849D72BD27344490007C05B0 /* kajsasalfabetApp.swift in Sources */,
+				E7CF0E5A290ACF6C0007597F /* AllTextModel.swift in Sources */,
 				849B7C292740510100EEF5F0 /* TextView.swift in Sources */,
 				849D72BB27343A9D007C05B0 /* collection.swift in Sources */,
 				84CA9E17273ADC9D00B48CBA /* LottieView.swift in Sources */,
