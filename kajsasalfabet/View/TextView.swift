@@ -16,24 +16,30 @@ struct TextView: View {
             LinearGradient(gradient: Gradient(colors: [.orange, .orange, .orange, .orange]), startPoint: .top, endPoint: .bottom)
                 .edgesIgnoringSafeArea(.all)
             VStack {
-                Text("Hallå allihop!")
+                Text("Kajsasalfabet")
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .foregroundColor(.white)
-                    .padding(.all)
+                    .padding(.horizontal)
+                
                 LottieView(animationName: "Ska vi spela", loopMode: .loop)
-                ScrollView {
-                    
-                    Spacer()
-                    
+                
+                VStack(alignment: .center) {
+                    Text("Hallå allihop!")
+                        .font(.title2)
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                        .padding(.bottom)
+
                     Text("Jag heter Kajsa och jag är 8 år gammal. Jag tycker om att läsa och skriva. Vill du träna alfabetet med mig, som jag gjorde med min mamma Eva?")
-                        .font(.title3)
+                        .font(.headline)
                         .fontWeight(.light)
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal)
-                    
-                }
+                }.padding(.bottom, 100.0)
+                
+                Spacer()
                 
                 Button("Starta"){
                     onClick = true
@@ -41,18 +47,15 @@ struct TextView: View {
                     impactHeavy.impactOccurred()
                 }
                 .padding(.all)
-                .font(.largeTitle)
+                .font(.title2)
                 .foregroundColor(Color("newColor"))
                 .fullScreenCover(isPresented: $onClick) {
                     collection()
                     
                 }
                 
-                
             }
             .padding(.horizontal)
-//            .accentColor(/*@START_MENU_TOKEN@*/Color(red: 1.0, green: 0.0, blue: 0.0, opacity: 1.0)/*@END_MENU_TOKEN@*/)
-//        .background(.blue)
         }
     }
     
