@@ -53,10 +53,8 @@ struct collection: View {
                                         .foregroundColor(.white)
                                         .background(Color.orange)
                                         .cornerRadius(10.0)
-                                    
                                 }
                             }
-                            
                         })
                         
                         .padding(.horizontal, 5)
@@ -73,12 +71,19 @@ struct collection: View {
                         
                     }) {
                         Text("Hejdå!!")
-                            .font(.title)
+                            .font(.title2)
                             .fontWeight(.bold)
-                            .foregroundColor(Color.orange)
-                    }
+                            .foregroundColor(Color.white)
+                    }.padding()
+                    .frame(width: 110.0, height: 50.0)
+//                        .background(.ultraThinMaterial)
+    //                    .background(Color(.orange))
+                        .background(Color(.orange))
+                        .cornerRadius(50)
+                        .padding()
                 }
-                .background(Color("newColor"))
+//                .background(Color("newColor"))
+                .background(Color(.orange).opacity(0.3))
                 
                 if(hejdåbutton)
                 {

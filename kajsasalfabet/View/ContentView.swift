@@ -24,17 +24,17 @@ struct ContentView: View {
                     player.playSound(sound1: moreinfo1, sound2: moreinfo1 + "1", type: "wav")
             })
             
-            Spacer()
-            Text(moreinfo1)
-                .font(.largeTitle)
-                .fontWeight(.bold)
-                .padding(.horizontal)
-            Text(moreinfo2)
-                .font(.title)
-                .fontWeight(.light)
-                .multilineTextAlignment(.center)
-                .padding(.all)
-        }
+            VStack{
+                Text(moreinfo1)
+                    .font(.title2)
+                    .fontWeight(.bold)
+                    .padding(.bottom, 2)
+                Text(moreinfo2)
+                    .font(.headline)
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+            }.padding(.bottom, 50)
+        }.padding()
     }
 }
 
